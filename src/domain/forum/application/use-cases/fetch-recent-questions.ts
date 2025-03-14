@@ -13,6 +13,7 @@ type FetchRecentQuestionsUseCaseResponse = Either<
     questions: Question[]
   }
 >
+
 @Injectable()
 export class FetchRecentQuestionsUseCase {
   constructor(private questionsRepository: QuestionsRepository) {}
