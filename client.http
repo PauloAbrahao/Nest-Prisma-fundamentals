@@ -6,8 +6,8 @@ POST {{baseUrl}}/accounts
 Content-Type: application/json
 
 {
-  "name": "Paulo",
-  "email": "p.abrahao@hotmail.com",
+  "name": "Diego Fernandes",
+  "email": "diego@rocketseat.com.br",
   "password": "123456"
 }
 
@@ -18,7 +18,7 @@ POST {{baseUrl}}/sessions
 Content-Type: application/json
 
 {
-  "email": "p.abrahao@hotmail.com",
+  "email": "diego@rocketseat.com.br",
   "password": "123456"
 }
 
@@ -29,15 +29,8 @@ POST {{baseUrl}}/questions
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
-###
-
-# @name create_question
-POST {{baseUrl}}/questions
-Content-Type: application/json
-Authorization: Bearer {{authToken}}
-
 {
-  "title": "Nova pergunta",
+  "title": "Nova pergunta 2",
   "content": "Teste"
 }
 
@@ -47,4 +40,3 @@ Authorization: Bearer {{authToken}}
 GET {{baseUrl}}/questions?page=1
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
-
